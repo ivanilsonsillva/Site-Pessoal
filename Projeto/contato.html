@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Lil Nill</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+   <header>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </div>
+   </header>
+
+    <h1 style="text-align: center;">Cadastre-se e agende seu evento!</h1>
+
+    <div class="container">
+        <div class="p-30">
+            <form class="form-flex">
+                <label for="nome">Nome:</label>
+                <input class="mb-10" type="text" name="nome" id="nome" onkeyup="validaNome()"></input>
+                <div class="mb-10 text-red" id="erroNome"></div>
+
+                <label for="email">Email:</label>
+                <input class="mb-10" type="email" name="email" id="email"onkeyup="validaEmail()"></input>
+                <div class="input mb-10 text-red"id = "erroEmail"></div>
+
+                <label for="assunto">Assunto:</label>
+                <textarea class="mb-10" name="assunto" id="assunto" cols="50" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div class="input mb-10 text-red"id = "erroAssunto"></div>
+                
+                <button class="tm-btn" onclick="enviar()">Enviar</button>
+
+            </form>
+
+        </div>
+
+        <div class="p-30">
+            <h2>Endereço da Empresa</h2>
+
+            <p>Endereço: Jacarepaguá, Rio de Janeiro - RJ, 22753-737</p>
+            <p>Rio de Janeiro</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172.4885862908828!2d-43.331736361593904!3d-22.97308253956531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd921043726fd%3A0xd564d89d2842044c!2sBikeRio%20Motos!5e1!3m2!1spt-BR!2sbr!4v1668089103554!5m2!1spt-BR!2sbr" width="420px" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id = "mapa" onmouseover="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <footer class="text-center p-20">
+
+        <div class="container">
+            <a href="https://www.facebook.com/ivanilsonsilva2020/" target="_blank">
+                <img  class="tm-icon p-10" src="assets/img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/lil_nill30/" target="_blank">
+                <img class="tm-icon p-10" src="assets/img/instagram.png" alt="instagram">
+            </a>   
+            <!-- <a href="https://www.linkedin.com/" target="_blank">
+                <img class="tm-icon p-10" src="assets/img/linkedin.png" alt="linkedin">
+            </a>       -->         
+        </div>
+
+        Todos os direitos reservados &copy
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
